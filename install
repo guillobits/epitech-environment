@@ -1,0 +1,19 @@
+#!/bin/bash
+source sources/display_help.sh
+source sources/display_ascii_start.sh
+source sources/start_install.sh
+
+clear
+display_ascii_start
+echo ""
+sleep 1
+display_help
+echo ""
+read -p "Démarrer l'installation ? (o/n)" CHOICE_START
+
+
+if [[ $CHOICE_START =~ ^[Oo]$ ]]; then
+	start_install
+else
+	echo "Abort...";
+fi
