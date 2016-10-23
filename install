@@ -2,18 +2,34 @@
 source sources/display_help.sh
 source sources/display_ascii_start.sh
 source sources/start_install.sh
+source sources/start_configuration.sh
 
 clear
 display_ascii_start
 echo ""
-sleep 1
-display_help
+echo "Test de connexion ..."
+ping -c 3 8.8.8.8
 echo ""
-read -p "Démarrer l'installation ? (o/n)" CHOICE_START
+echo ""
+if [ ${?} = '0' ]; then
+	display_help
+	echo ""
+	read -p "Démarrer l'installation ? (o/n)" CHOICE_START
 
-
-if [[ $CHOICE_START =~ ^[Oo]$ ]]; then
-	start_install
+	if [[ $CHOICE_START =~ ^[Oo]$ ]]; then
+		start_install
+		clear
+		start_configuration
+		clear
+		echo "Votre environnement de travail EPITECH est prêt, bon courage."
+		echo "Si vous avez rencontrez des problème pendant l'execution de ce script, faites m'en part ;-)"
+		sleep 5
+	else
+		echo "Abort..."
+	fi
 else
-	echo "Abort...";
+	echo "Vous devez être connecté à internet pour utiliser ce script"
+	echo "Abort..."
+	exit 1
 fi
+exit 0
