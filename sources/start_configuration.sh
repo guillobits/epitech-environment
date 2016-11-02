@@ -21,4 +21,15 @@ function start_configuration
 	blih sshkey upload
 	echo "Done"
 	echo ""
+
+	echo " ## CONFIGURATION D'UN DOSSIER D'EXECUTION PERSONNALISE POUR $USER"
+	echo "export PATH=\$HOME/bin:/usr/local/bin:/home/$USER/bin/:\$PATH" >> ~/.zshrc
+	echo "Done"
+	echo ""
+
+	echo " ## INSTALLATION D'UN MRCLEAN"
+	cp ./assets/mrclean ~/bin/
+	chmod +x ~/bin/mrclean
+	echo "Done"
+	echo ""
 }

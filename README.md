@@ -28,9 +28,12 @@ Ce script effectue les actions suivantes:
 - Génération des alias (emacs => ne)
 - Génération d'une clef SSH
 - Upload de la clef SSH sur blih
+- Configuration d'un dossier ~/bin qui permet de stocker des binaires divers et
+  configuré dans le zshrc pour permettre une execution direct.
 
 #Usage
 Pour executer le script il suffit d'executer la commande suivante :
+
 ```
 ./install
 ```

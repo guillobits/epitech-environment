@@ -1,0 +1,10 @@
+echo "###################################################";
+echo "####### Suppresion des fichiers temporaires #######";
+find -name "*~" > mrclean_593fc8290.tmp;
+find -name "#*#" >> mrclean_593fc8290.tmp;
+find -name "*~" -delete;
+find -name "#*#" -delete;
+echo "###################################################";
+cat mrclean_593fc8290.tmp;
+rm mrclean_593fc8290.tmp;
+echo "###################################################";
