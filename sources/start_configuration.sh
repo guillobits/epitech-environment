@@ -23,6 +23,7 @@ function start_configuration
 	echo ""
 
 	echo " ## CONFIGURATION D'UN DOSSIER D'EXECUTION PERSONNALISE POUR $USER"
+	mkdir -p ~/bin/
 	echo "export PATH=\$HOME/bin:/usr/local/bin:/home/$USER/bin/:\$PATH" >> ~/.zshrc
 	echo "Done"
 	echo ""
