@@ -3,7 +3,8 @@ function start_configuration
 {
 	echo " ## INSTALLATION DE LA CONFIGURATION EMACS"
 	cp -R ./assets/.emacs ~/.emacs
-	cp -R ./assets/.emacs.d ~/.emacs.d/
+	mkdir -p ~/.emacs.d/epitech/
+	cp -R ./assets/.emacs.d ~/.emacs.d/epitech/
 	echo "Done"
 	echo ""
 
