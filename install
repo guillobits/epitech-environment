@@ -18,12 +18,16 @@ if [ ${?} = '0' ]; then
 
 	if [[ $CHOICE_START =~ ^[Oo]$ ]]; then
 		start_install
-		clear
+		echo ""
+		echo ""
+		echo ""
+		echo "Installation terminée..."
+		sleep 1
+		echo "Nous allons maintenant configurer votre environnement..."
+		sleep 3
 		start_configuration
-		clear
 		echo "Votre environnement de travail EPITECH est prêt, bon courage."
 		echo "Si vous avez rencontrez des problème pendant l'execution de ce script, faites m'en part ;-)"
-		sleep 5
 	else
 		echo "Abort..."
 	fi

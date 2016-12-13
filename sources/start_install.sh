@@ -10,79 +10,68 @@ function start_install()
 	echo ""
 
 	echo " ## INSTALLATION DE TERMINATOR"
-	sudo pacman -S terminator
+	echo -e "Y\n" | sudo pacman -S terminator
 	echo ""
 
 	echo " ## INSTALLATION DE TREE"
-	sudo pacman -S tree
+	echo -e "Y\n" | sudo pacman -S tree
 	echo ""
 
 	echo " ## INSTALLATION DE GIT"
-	sudo pacman -S git
+	echo -e "Y\n" | sudo pacman -S git
 	echo ""
 
-	echo " ## INSTALLATION DE OPENSSL"
-	sudo pacman -S openssl
+	echo " ## INSTALLATION DE OPENSSH"
+	echo -e "Y\n" | sudo pacman -S openssh
 	echo ""
 
 	echo " ## INSTALLATION DE ZSH"
-	sudo pacman -S zsh
+	echo -e "Y\n" | sudo pacman -S zsh
 	echo ""
 
 	echo " ## INSTALLATION DE CURL"
-	sudo pacman -S curl
+	echo -e "Y\n" | sudo pacman -S curl
 	echo ""
 
 	echo " ## INSTALLATION DE WGET"
-	sudo pacman -S wget
-	echo ""
-
-	echo " ## INSTALLATION DE OH-MY-ZSH"
-	sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+	echo -e "Y\n" | sudo pacman -S wget
 	echo ""
 
 	echo " ## INSTALLATION DE EMACS"
-	sudo pacman -S emacs-nox
+	echo -e "Y\n" | sudo pacman -S emacs-nox
 	echo ""
 
 	echo " ## INSTALLATION DE LIBNCURSES"
-	sudo pacman -S ncurses
+	echo -e "Y\n" | sudo pacman -S ncurses
 	echo ""
 
 	echo " ## INSTALLATION DE VALGRIND"
-	sudo pacman -S valgrind
+	echo -e "Y\n" | sudo pacman -S valgrind
 	echo ""
 
 	echo " ## INSTALLATION DE GDB"
-	sudo pacman -S gdb
+	echo -e "Y\n" | sudo pacman -S gdb
 	echo ""
 
 	echo " ## INSTALLATION DE BLIH"
 	sudo cp ./assets/blih /usr/bin/
+	echo "DONE"
 	echo ""
 
 	echo " ## INSTALLATION DE GCC"
-	sudo pacman -S gcc
+	echo -e "Y\n" | sudo pacman -S gcc
 	echo ""
 
 	echo " ## INSTALLATION DE CLANG"
-	sudo pacman -S clang
+	echo -e "Y\n" | sudo pacman -S clang
 	echo ""
 
 	echo " ## INSTALLATION DE PYTHON"
-	sudo pacman -S python
-	echo ""
-
-	echo " ## INSTALLATION DE GIT KRAKEN"
-	git clone https://aur.archlinux.org/gitkraken.git
-	cd gitkraken
-	makepkg
-	cd -
-	rm -Rf gitkraken
+	echo -e "Y\n" | sudo pacman -S python
 	echo ""
 
 	echo " ## INSTALLATION DE FILEZILLA"
-	sudo pacman -S filezilla
+	echo -e "Y\n" | sudo pacman -S filezilla
 	echo ""
 
 }
