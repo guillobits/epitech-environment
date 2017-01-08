@@ -11,7 +11,6 @@ Ce script effectue les actions suivantes:
 - Installation de GIT
 - Installation d'OpenSSL
 - Installation de ZSH
-- Installation d'oh-my-zsh
 - Installation de curl
 - Installation de wget
 - Installation de Emacs (version no-x)
@@ -22,8 +21,6 @@ Ce script effectue les actions suivantes:
 - Installation de gcc
 - Installation de clang
 - Installation de python
-- Installation de GitKraken
-- Installation de filezilla
 - Mise en place de la configuration Emacs (header)
 - Génération des alias (emacs => ne)
 - Génération d'une clef SSH
