@@ -20,7 +20,9 @@ function start_configuration
 	echo ""
 
 	echo " ## UPLOAD DE LA CLEF SSH"
-	blih sshkey upload
+	echo "Entrez votre login EPITECH"
+	read LOGIN
+	blih -u $LOGIN sshkey upload
 	echo "Done"
 	echo ""
 
