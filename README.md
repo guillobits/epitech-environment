@@ -1,4 +1,4 @@
-# epitech-environment
+# epitech-environment (not maintened anymore)
 Script a destination des élèves d'EPITECH souhaitant installer rapidement et facilement un environnement de travail pour la  TEK1 sous ARCHLINUX.
 J'effectuerai bientôt une adaptation pour Debian.
 
